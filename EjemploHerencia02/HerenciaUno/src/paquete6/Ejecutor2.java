@@ -42,7 +42,7 @@ public class Ejecutor2 {
              EstudiantePresencial estudiante = new EstudiantePresencial(nombre,
                      apellido, identificacion, edad, costoCredito, numeroCredito);
                   
-            cadena = String.format("%s",estudiante);
+            cadena = String.format("%s%s",cadena,estudiante);
             System.out.println("Desea salir, pulse s");
             String opcion = entrada.nextLine();
             if(opcion.equals("s")){
