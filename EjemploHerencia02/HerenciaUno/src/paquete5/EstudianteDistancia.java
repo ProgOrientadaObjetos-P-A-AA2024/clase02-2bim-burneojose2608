@@ -6,7 +6,11 @@ public class EstudianteDistancia extends Estudiante{
     int numeroAsignaturas;
     double costoAsignatura;
     double matriculaDistancia;
+    /*
+    en este constructo recibe los valores de la super clase y tambien este constructor
+    tiene valores para su clase que le va a dar valores
     
+    */
         
     public EstudianteDistancia(String n, String ap, String iden, int e, 
             int numAsg, double costoAsg){

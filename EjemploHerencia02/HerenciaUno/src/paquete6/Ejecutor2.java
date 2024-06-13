@@ -25,12 +25,26 @@ public class Ejecutor2 {
         String cadena = "";
         
         while(bandera){
-            System.out.println("ingresa un saludo");
-            String saludo = entrada.nextLine();
-            cadena = String.format("%s%s\n", cadena, saludo);
-            System.out.println("Desea salir, pulse S");
+            System.out.println("Ingresa identificacion");
+            String identificacion = entrada.nextLine();
+            System.out.println("Ingrese su nombre");
+            String nombre = entrada.nextLine();
+            System.out.println("Ingrese su apellido");
+            String apellido = entrada.nextLine();
+            System.out.println("Ingrese la edad");
+            int edad = entrada.nextInt();
+            System.out.println("Ingrese el numero de credito");
+            int numeroCredito= entrada.nextInt();
+            System.out.println("Ingrese el costo del credito");
+            double costoCredito= entrada.nextDouble();
+            entrada.nextLine();
+            cadena = String.format("%s%s\n%s\n%s\n%d\n%d\n%.2f\n", 
+                    cadena, nombre,
+                    apellido,identificacion,
+                    edad,numeroCredito,costoCredito);
+            System.out.println("Desea salir, pulse s");
             String opcion = entrada.nextLine();
-            if(opcion.equals("S")){
+            if(opcion.equals("s")){
                 bandera = false;
             }
         }
