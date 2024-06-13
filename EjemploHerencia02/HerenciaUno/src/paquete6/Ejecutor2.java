@@ -39,13 +39,10 @@ public class Ejecutor2 {
             System.out.println("Ingrese el costo del credito");
             double costoCredito= entrada.nextDouble();
             entrada.nextLine();
-             EstudianteDistancia estudiante = new EstudianteDistancia(nombre,
-                     apellido, identificacion, edad, numeroCredito,
-                     costoCredito);
-            cadena = String.format("%s%s\n%s\n%s\n%d\n%d\n%.2f\n", 
-                    cadena, nombre,
-                    apellido,identificacion,
-                    edad,numeroCredito,costoCredito);
+             EstudiantePresencial estudiante = new EstudiantePresencial(nombre,
+                     apellido, identificacion, edad, costoCredito, numeroCredito);
+                  
+            cadena = String.format("%s",estudiante);
             System.out.println("Desea salir, pulse s");
             String opcion = entrada.nextLine();
             if(opcion.equals("s")){
