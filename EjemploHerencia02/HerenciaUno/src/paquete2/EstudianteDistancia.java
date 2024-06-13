@@ -1,10 +1,18 @@
 package paquete2;
 
 public class EstudianteDistancia extends Estudiante{
-    
+    /*
+    aqui hay un error por que en la super clase  hay un constructor que envia cuantro parametos
+    3 cadenas y un entero para que se quiete el error se crea un constructor con las mismas
+    variables
+    */
     private int numeroAsignaturas;
     private double costoAsignatura;
     private double matriculaDistancia;
+
+    public EstudianteDistancia(String n, String a, String iden, int ed) {
+        super(n, a, iden, ed);
+    }
     
     
     // 2.  Método establecerNumeroAsginaturas(numero: Real)
