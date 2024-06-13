@@ -23,7 +23,8 @@ public class Ejecutor2 {
         Scanner entrada = new Scanner(System.in);
         boolean bandera = true;
         String cadena = "";
-        
+      
+ 
         while(bandera){
             System.out.println("Ingresa identificacion");
             String identificacion = entrada.nextLine();
@@ -38,6 +39,9 @@ public class Ejecutor2 {
             System.out.println("Ingrese el costo del credito");
             double costoCredito= entrada.nextDouble();
             entrada.nextLine();
+             EstudianteDistancia estudiante = new EstudianteDistancia(nombre,
+                     apellido, identificacion, edad, numeroCredito,
+                     costoCredito);
             cadena = String.format("%s%s\n%s\n%s\n%d\n%d\n%.2f\n", 
                     cadena, nombre,
                     apellido,identificacion,
